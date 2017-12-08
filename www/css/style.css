@@ -1,0 +1,402 @@
+/* Empty. Add your own CSS if you like */
+.gradientBackground {
+  overflow: hidden;
+  width: 100%;
+  background: url("../img/BG-orange.png") center no-repeat;
+  background-size: 100% 100%;
+  /*background: url("../img/BG_90.png") center no-repeat;*/
+  /*background: -moz-linear-gradient(top, #ffaa1b 0%, #ff6637 100%);*/
+  /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffaa1b), color-stop(100%,#ff6637));*/
+  /*background: -webkit-linear-gradient(top, #ffaa1b 0%,#ff6637 100%);*/
+  /*background: -o-linear-gradient(top, #ffaa1b 0%,#ff6637 100%);*/
+  /*background: -ms-linear-gradient(top, #ffaa1b 0%,#ff6637 100%);*/
+  /*background: linear-gradient(to bottom, #ffaa1b 0%,#ff6637 100%);*/
+}
+
+/*html{*/
+/*background: url("../img/BG-orange.png") center no-repeat;*/
+/*background-size: 100% 100%;*/
+/*}*/
+body {
+  /*#ff6946 Alpha:3%*/
+  background-color: RGBA(255, 105, 70, 0.03);
+}
+
+.myCard {
+  overflow: hidden;
+  width: 100%;
+  background: url("../img/card.png") center no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.ic_nfc {
+  width: 24px;
+  height: 21px;
+  float: left;
+  background: url("../img/ic_scan.png") center no-repeat;
+  background-size: 100% 100%;
+}
+
+.ic_setup {
+  width: 24px;
+  height: 24px;
+  float: right;
+  background: url("../img/ic_setup.png") center no-repeat;
+  background-size: 100% 100%;
+}
+
+.header {
+  font-family: "PingFangMedium";
+  height: 21px;
+  text-align: center;
+  font-size: 18px;
+  color: #FFF;
+"
+}
+
+.Avatar {
+  margin-top: 6%;
+  webkit-writing-mode: vertical-lr;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.userName {
+  color: #000;
+  text-align: center;
+  margin: 2% 0 3% 0;
+  font-weight: 800;
+  font-size: 18px;
+  font-family: "PingFangBold";
+}
+
+.department_content {
+  color: #4c4c4c;
+  text-align: center;
+  margin: 0;
+  font-weight: 800;
+  font-size: 14px;
+  font-family: "PingFangBold";
+}
+
+.department_hint {
+  color: #eb5037;
+  text-align: center;
+  margin-top: 1%;
+  font-weight: 800;
+  font-family: "PingFangBold";
+}
+
+.userProfile {
+  color: #666;
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+  font-family: "PingFangMedium";
+}
+
+.department {
+  float: left;
+  width: 30%;
+}
+
+.companyId {
+  float: right;
+  width: 25%;
+}
+
+.doorItem {
+  height: 125px;
+  width: 100%;
+  background: url('../img/doorItemsBg.png') center no-repeat;
+  background-size: 100% 100%;
+}
+
+.doorItemClicked {
+  height: 125px;
+  width: 100%;
+  background: url('../img/doorItemsBg_hover.png') center no-repeat;
+  background-size: 100% 100%;
+}
+
+.doorItemIcon {
+  float: left;
+  width: 29%;
+  height: 115px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 115px;
+}
+
+.gate {
+  margin-left: 35%;
+  width: 25%;
+  vertical-align: middle;
+}
+
+.meettingRoom {
+  margin-left: 25%;
+  width: 40%;
+  vertical-align: middle;
+}
+
+.departmentRoom {
+  margin-left: 25%;
+  width: 40%;
+  vertical-align: middle;
+}
+
+.doorItemName {
+  float: left;
+  width: 46%;
+  height: 115px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
+.doorItemName .doorItemNameH1 {
+  color: #ff8e23;
+  text-align: left;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: "PingFangBold";
+  margin-top: 20%;
+}
+
+.doorItemName .doorItemNameH2 {
+  color: #ff8e23;
+  text-align: left;
+  font-weight: 800;
+  font-size: 16px;
+  font-family: "PingFangBold";
+  margin-top: 17%;
+  margin-top: 2%;
+}
+
+.doorItemName .doorItemNameH3 {
+  color: #ff8e23;
+  text-align: left;
+  font-weight: 800;
+  font-size: 14px;
+  font-family: "PingFangBold";
+  margin-top: 17%;
+  margin-top: 2%;
+}
+
+.doorItemName .doorItemNameH4 {
+  color: #ff8e23;
+  text-align: left;
+  font-weight: 800;
+  font-size: 12px;
+  font-family: "PingFangBold";
+  margin-top: 17%;
+  margin-top: 2%;
+}
+
+.dialogWrapper {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  text-align: center;
+}
+
+.dialogWrapper img {
+  width: 80%;
+  margin-top: 60%;
+}
+
+.dialogWrapper p {
+  font-family: "PingFangBold";
+  font-size: 16px;
+}
+
+.doorItemTurnOnButton {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 115px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.TurnOnButton {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 4%;
+  vertical-align: middle;
+  background: url('../img/bt_turnOn.png') center no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  color: #FFF;
+}
+
+.login, .passwordHtml {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: url('../img/login_bg.png') no-repeat center;
+  background-size: 100% 100%;
+}
+
+.logo {
+  background: url('../img/loginlogo.png') no-repeat center;
+  background-size: 100% 100%;
+  margin: 30% auto 0;
+}
+
+.jobNumber {
+  margin: 4% 4% auto 4%;
+}
+
+.Name {
+  margin: 36% 4% auto 4%;
+}
+
+.ReName {
+  margin: 25% 4% auto 4%;
+}
+
+.oldPassword {
+  margin: 4% 4% auto 4%;
+}
+
+.newPassword {
+  margin: 4% 4% auto 4%;
+}
+
+.newRePassword {
+  margin: 4% 4% auto 4%;
+}
+
+.textField {
+  /*background: url('../img/bg.png') no-repeat center;*/
+  /*background-size: 100% 100%;*/
+  background-color: transparent;
+  width: 92%;
+  font-size: 16px !important;
+  color: white !important;
+  padding-top: 0 !important;
+  padding-left: 10px !important;
+  font-family: "PingFangMedium";
+  height: 6% !important;
+  line-height: normal !important;
+  border: 1px solid #FFF !important;
+  border-radius: 5px;
+}
+
+.loginButton, .reTureButton {
+  background: url('../img/bt_login.png') no-repeat center;
+  background-size: 100% 100%;
+  width: 92%;
+  border: 0px;
+  height: 6.5% !important;
+  margin: 8% 4% auto 4%;
+  color: white;
+  font-size: 18px;
+  font-family: "PingFangBold";
+}
+
+.passLink {
+  display: block;
+  margin-top: 4%;
+  float: right;
+  margin-right: 6%;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "PingFangBold";
+}
+
+.loginButtonOnClicked {
+  background: url('../img/bt_bg_onclicked.png') no-repeat center;
+  background-size: 100% 100%;
+  width: 92%;
+  border: 0px;
+  height: 6.5% !important;
+  margin: 8% 4% auto 4%;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  font-family: "PingFangBold";
+}
+
+.footerFont {
+  text-align: center;
+  margin-top: 24%;
+  color: #FFF;
+  font-weight: 800;
+  font-size: 18px;
+  font-family: "PingFangBold";
+}
+
+@font-face {
+  font-family: 'PingFangMedium';
+  /*src: url('../fonts/PingFangMedium.eot');*/
+  /*src: url('../fonts/PingFangMedium.eot?#iefix') format('embedded-opentype'),*/
+  /*url('../fonts/PingFangMedium.woff') format('woff'),*/
+  /*url('../fonts/PingFangMedium.svg#PingFangMedium') format('svg'),*/
+url('../fonts/PingFangMedium.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+.error {
+  text-align: center;
+  margin-top: 4%;
+  color: #ff0000;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "PingFangBold";
+}
+
+﻿
+
+@font-face {
+  font-family: 'PingFangBold';
+  /*src: url('../fonts/PingFangMedium.eot');*/
+  /*src: url('../fonts/PingFangMedium.eot?#iefix') format('embedded-opentype'),*/
+  /*url('../fonts/PingFangMedium.woff') format('woff'),*/
+  /*url('../fonts/PingFangMedium.svg#PingFangMedium') format('svg'),*/
+url('../fonts/PingFangBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.arrow {
+  /*float: left;*/
+  background: url("../img/arrow.png") center no-repeat;
+  background-size: 100% 100%;
+  margin-left: 4%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+

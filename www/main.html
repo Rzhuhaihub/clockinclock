@@ -1,0 +1,129 @@
+<div class="gradientBackground" style="height:{{height}} ">
+  <div class="header" style="margin-top:{{ic_scanMarginTop}}">
+    <div class="ic_nfc" ng-click="scanner()" style="margin-left: {{ic_scanMarginTop}}"></div>
+    中协智能科技
+    <div class="ic_setup" ui-sref="setup" style="margin-right: {{ic_scanMarginTop}}"></div>
+  </div>
+  <div class="myCard" style="height:{{cardHeight}}; margin-top: {{cardMaginHeight}}">
+    <div class="Avatar" ng-click="changePic()"
+         style="background: url({{pic}}) center;background-size: 100% 100%; height:{{avatar_height}};width:{{avatar_width}}">
+    </div>
+    <p class="userName">
+      {{userMing}}
+    </p>
+    <!--<a style="text-decoration:none;">-->
+    <!--<p class="userProfile">-->
+    <!--Enjoy Yourself!-->
+    <!--</p>-->
+    <!--</a>-->
+
+    <div class="department" style="height:{{department_height}};margin-left: {{department_marginLeft}}">
+      <p class="department_content">
+        {{positionP}}
+      </p>
+      <a style="text-decoration:none;">
+        <p class="department_hint">
+          职位
+        </p>
+      </a>
+    </div>
+    <div class="companyId" style="height:{{department_height}}; margin-right: {{department_marginLeft}}">
+      <p class="department_content">
+        {{userId}}
+      </p>
+      <a style="text-decoration:none;">
+        <p class="department_hint">
+          工号
+        </p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<ion-content scroll="true" class="has-header" padding="true"
+             style="height:{{doorContnetHeight}};margin-top:{{doorContnetMarginTop}}">
+
+  <div class="doorItem" on-touch="onTouchItem(999,20)" on-release="onReleaseItem(999,20)" ng-class="{doorItemClicked:gateCss}"
+       ng-click="loadingOpeningLar(20,{{userName}})">
+    <div class="doorItemIcon">
+      <img class="gate" src="img/ic_gate.png"/>
+    </div>
+    <div class="doorItemName">
+      <p class="doorItemNameH1">
+        公司大门
+      </p>
+
+      <p class="doorItemNameH2">
+        Company Gate
+      </p>
+    </div>
+    <div class="doorItemTurnOnButton">
+      <div class="TurnOnButton"
+           style="width:{{turnOnButtonWidth}};height:{{turnOnButtonHeight}};line-height: {{turnOnButtonHeight}}">
+        开门
+      </div>
+    </div>
+  </div>
+<!--<div class="doorItem" on-touch="onTouchItem(1)" on-release="onReleaseItem(1)"
+       ng-class="{doorItemClicked:meetingRoom}" ng-click="loadingOpening(6,{{userName}})" ng-if="meetingKey">
+    <div class="doorItemIcon">
+      <img class="meettingRoom" src="img/ic_meettingRoom.png"/>
+    </div>
+    <div class="doorItemName">
+      <p class="doorItemNameH1">
+        会议室
+      </p>
+      <p class="doorItemNameH3">
+        MeetingRoom Gate
+      </p></div>
+    <div class="doorItemTurnOnButton">
+      <div class="TurnOnButton"
+           style="width:{{turnOnButtonWidth}};height:{{turnOnButtonHeight}};line-height: {{turnOnButtonHeight}}">
+        开门
+      </div>
+    </div>
+  </div>-->
+  <!--<div class="doorItem" on-touch="onTouchItem(2)" on-release="onReleaseItem(2)"
+       ng-class="{doorItemClicked:departmentRoom}" ng-click="loadingOpening()">
+    <div class="doorItemIcon">
+      <img class="departmentRoom" src="img/ic_departmentRoom.png"/>
+    </div>
+    <div class="doorItemName">
+      <p class="doorItemNameH1">
+        所属部门大门
+      </p>
+      <p class="doorItemNameH4">
+        DepartmentRoom Gate
+      </p></div>
+    <div class="doorItemTurnOnButton">
+      <div class="TurnOnButton"
+           style="width:{{turnOnButtonWidth}};height:{{turnOnButtonHeight}};line-height: {{turnOnButtonHeight}}">
+        开门
+      </div>
+    </div>
+  </div>-->
+
+  <div ng-repeat="door in doorsList" class="doorItem" on-touch="onTouchItem($index)" on-release="onReleaseItem($index)"
+       ng-class="{doorItemClicked:gate{{$index}}}" ng-click="loadingOpening({{door.normalId}},{{userName}})">
+    <div class="doorItemIcon">
+      <img class="departmentRoom" src="img/ic_departmentRoom.png"/>
+    </div>
+    <div class="doorItemName">
+      <p class="doorItemNameH1">
+        {{door.normalName}}
+      </p>
+      <p class="doorItemNameH4">
+        Room Gate
+      </p></div>
+    <div class="doorItemTurnOnButton">
+      <div class="TurnOnButton"
+           style="width:{{turnOnButtonWidth}};height:{{turnOnButtonHeight}};line-height: {{turnOnButtonHeight}}">
+        开门
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<div ng-if="loadingDialog" class="dialogWrapper">
+  <img src="img/loadingColorful.gif"/>
+</div>

@@ -1,0 +1,49 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-3dtouch": {
+            "PACKAGE_NAME": "com.ionicframework.lockinlock"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.ionicframework.lockinlock"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.lockinlock"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.lockinlock"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ionicframework.lockinlock"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.lockinlock"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.lockinlock"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.lockinlock"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "com.ionicframework.lockinlock"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.lockinlock"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "com.ionicframework.lockinlock"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ionicframework.lockinlock"
+        }
+    }
+}
